@@ -3,7 +3,10 @@ import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 
 const CalendarHeader = ({ currentDate, onPreviousMonth, onNextMonth }) => {
+
+  const capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1);
   const monthName = currentDate.toLocaleString("default", { month: "long" });
+  const capitalizedMonthName = capitalize(monthName);
   const year = currentDate.getFullYear();
 
   return (
@@ -11,7 +14,7 @@ const CalendarHeader = ({ currentDate, onPreviousMonth, onNextMonth }) => {
       <button onClick={onPreviousMonth} className="px-2 py-1 border border-tertiary bg-secondary rounded-lg">
         <KeyboardArrowLeftIcon />
       </button>
-      <h2 className="text-lg font-bold">{`${monthName} ${year}`}</h2>
+      <h2 className="text-lg font-bold">{`${capitalizedMonthName} ${year}`}</h2>
       <button onClick={onNextMonth} className="px-2 py-1 border border-tertiary bg-secondary rounded-lg">
         <KeyboardArrowRightIcon />
       </button>
