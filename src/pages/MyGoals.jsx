@@ -4,13 +4,20 @@ import Select from '../atomes/Select';
 import CardGoal from '../organismes/CardGoal';
 
 function MyGoals() {
+
+  const options = [
+    {id:1 , value: "En attente"},
+    {id:2 , value: "En cours"},
+    {id:3 , value: "Terminé"},
+  ];
+
   return (
         <div>
             <div className='flex items-center justify-between'>
               <h2 className='py-9 font-bold ml-6'>Mes objectifs</h2>
               <SearchBar />
-              <div className='mr-6'>
-                <Select />
+              <div className='mr-6 w-1/6'>
+                <Select optionName='Status' options={options}/>
               </div>  
             </div>
             

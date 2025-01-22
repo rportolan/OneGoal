@@ -16,9 +16,12 @@ export default {
         primary: "#121317",
         secondary: "#1a1d27",
         tertiary: "#292c38",
-        fourly: "#3B5ED1",
+        fourly: "#6684E8",
         fively: "#828693"
       },
+      height: {
+        "100": "25rem",
+      }
     },
   },
   plugins: [],

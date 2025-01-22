@@ -35,7 +35,7 @@ const Dashboard = () => {
               <DaysGrid days={days} onDayClick={toggleDay} />
               <StopWatch />
             </div>
-                   
+       
         </>
   );
 }
