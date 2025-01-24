@@ -38,7 +38,7 @@ const Analytics = () => {
                     <CardStat titleCard="Temps total travaillé" value="94:48:12" isActive={false} progress="- 5" descStat="Nombre total d'objectif réalisés depuis la création de votre compte, la progression repose sur le mois dernier."/>
                 </div>
             </div>
-            <div className="container h-1/2 mt-10">
+            <div className="container h-96 mt-4">
                 <BarChart maxHeight={100} options={options} initialData={initialData} />
             </div>
     </>

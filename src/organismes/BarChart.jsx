@@ -64,7 +64,7 @@ const BarChart = ({ maxHeight, options, initialData }) => {
   const maxValue = Math.max(...data.map((item) => item.value), 1); // Empêche division par 0
 
   return (
-    <div className="p-4 ml-4 h-100 mr-4 border border-secondary rounded-lg">
+    <div className="p-4 ml-4 h-full mr-4 border border-secondary rounded-lg">
       <div className="flex items-center justify-between mb-8">
         <div className="flex items-center">
           <BarChartIcon className="text-fourly" />
