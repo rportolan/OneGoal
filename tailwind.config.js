@@ -16,7 +16,7 @@ export default {
         primary: "#121317",
         secondary: "#1a1d27",
         tertiary: "#292c38",
-        fourly: "#6684E8",
+        fourly: "#6366F1",
         fively: "#828693"
       },
       height: {
